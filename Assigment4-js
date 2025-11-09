@@ -1,0 +1,11 @@
+'use strict'
+let numbers = []
+let number = Number(prompt('Enter a number'))
+while (number != 0){
+    numbers.push(number)
+    number = Number(prompt('Enter a number'))
+}
+numbers.sort((a, b) => b - a)
+for (const num of numbers){
+    console.log(num)
+}
