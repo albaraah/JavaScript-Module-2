@@ -1,0 +1,11 @@
+'use strict'
+const number = prompt('What is the number of participants?')
+let names = []
+for (let i = number-1; i >= 0; i--){const name = prompt('What is the name of the participant?'); names.push(name)}
+const list = document.getElementById("participantList");
+names.sort()
+
+for (const name of names){const li = document.createElement("li");
+  li.textContent = name;
+  list.appendChild(li);
+}
