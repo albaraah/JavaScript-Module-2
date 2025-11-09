@@ -1,0 +1,13 @@
+'use strict'
+let dogs = []
+for (let i = 1; i < 7; i++){
+    const dog = prompt(`Enter the name of dog ${i}`); dogs.push(dog)
+}
+dogs.sort()
+dogs.reverse()
+const list = document.getElementById("dogslist");
+for (const dog of dogs){
+  const li = document.createElement("li");
+  li.textContent = dog;
+  list.appendChild(li);
+}
