@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Assignment 3</title>
+</head>
+<body>
+    <ul id="dogslist"></ul>
+    <script src="exe3.js"></script>
+</body>
+</html>
